@@ -9,6 +9,8 @@ console.log("My name is:", username);
 // boolen--->values with true or false
 let isStudent = true;
 console.log("Am I a student?:", isStudent);
+let isEmployed = false;
+console.log("Am I employed?:", isEmployed);
 
 // undefined--->value not assigned
 let address;// variable declared but not assigned   
