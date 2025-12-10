@@ -5,8 +5,8 @@ console.log("My age is:", userage);
 // strings--->values with characters
 let username = "Alice Smith"; //double quotes are used to define strings
 console.log("My name is:", username);
-let city = 'Los Angeles'; // single quotes are also used to define strings
-console.log("I live in:", city);    
+let cityA = 'Los Angeles'; // single quotes are also used to define strings
+console.log("I live in:", cityA);    
 let country = `USA`; // backticks are used for template literals
 console.log("My country is:", country);       
 
@@ -38,8 +38,8 @@ console.log("A unique identifier is:", uniqueId);
 console.log("Person object:", person);
 
 // array--->ordered collection of values
-let colors = ["red", "green", "blue"];
-console.log("Colors array:", colors);
+let colorsPerfect = ["red", "green", "blue"];
+console.log("Colors array:", colorsPerfect);
 
 // null vs undefined
 let score;  // undefined -->variable declared but not assigned as in null establishes difference

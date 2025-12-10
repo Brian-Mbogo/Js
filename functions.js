@@ -1,40 +1,53 @@
-// function.js---a reusable block of code designed to perform a particular task
-// function declaration---helps to avoid repeating code
+//functions--is a reusable block of code that performs a specific task
+//function declaration
 function greet(name) {
-    return `Hello, ${name}!`;
-}
-console.log(greet("Ezekiel"));
+    return "Hello, " + name + "!";
+}       
 
-// calling the function multiple times with different arguments
-// console.log(greet("Alice"));
-// console.log(greet("Bob"));
-// function expression---assigning a function to a variable
-// const add = function(a, b) {
-    // return a + b;
-// };
-
-// calling a function--use the function name followed by parentheses
-console.log(add(5, 3));  Outputs: 8
-    //parameters/arguments--inputs to the function
-// arrow function syntax---a more concise way to write functions
+//function expression
+const add = function(a, b) {
+    return a + b;
+};  
+//arrow function
 const multiply = (a, b) => a * b;
-console.log(multiply(4, 6));  Outputs: 24 
 
-// functions with no parameters
-const sayHello = () => "Hello, World!";
-// console.log(sayHello());  Outputs: Hello, World!
-// functions with default parameters
-const power = (base, exponent = 2) => Math.pow(base, exponent);
-console.log(power(3));;  Outputs: 9
-console.log(power(2, 3));;  Outputs: 8
+//function with default parameters
+function power(base, exponent = 2) {
+    return Math.pow(base, exponent);
+}       
 
-// functions that return values
-const square = (x) => x * x;
-let result = square(5);
-console.log(result);  Outputs: 25
+//function with rest parameters
+function sum(...numbers) {
+    return numbers.reduce((total, num) => total + num, 0);
+}   
 
-// functions without return values (void functions)
-const logMessage = (message) => {
-    console.log("Log:", message);
-};
-// logMessage("This is a test message.");  Outputs: Log: This is a test message.   
+//higher-order function
+function filter(array, predicate) {
+    const result = [];  
+    for (const item of array) {
+        if (predicate(item)) {
+            result.push(item);
+        }       
+    }
+    return result;
+}   
+
+//example usage
+console.log(greet("Alice"));    
+console.log(add(5, 3));
+console.log(multiply(4, 2));
+console.log(power(3));
+console.log(sum(1, 2, 3, 4, 5));
+console.log(filter([1, 2, 3, 4, 5], num => num % 2 === 0));
+
+// Output:
+// Hello, Alice!
+// 8    
+// 8
+// 9
+// 15
+// [ 2, 4 ]
+
+// This code demonstrates various types of functions in JavaScript, including function declarations, function expressions, arrow functions, functions with default parameters, rest parameters, and higher-order functions. Each function performs a specific task and can be reused throughout the code.   
+
+    
