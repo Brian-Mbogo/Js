@@ -17,4 +17,6 @@ const pi=3.14;
 console.log("The value of pi is:",{pi});   
 
 var city="New York";
-console.log("I live in:",{city});       
+console.log("I live in:",{city});
+city="Los Angeles";
+console.log("I moved to:",{city});         
