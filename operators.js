@@ -33,11 +33,11 @@ export const assign = (value) => { x = value; return x; };
 
 // Comparison operators
 
-export const isEqual = (a, b) => a == b;
-export const isStrictEqual = (a, b) => a === b;
-export const isNotEqual = (a, b) => a != b;
-export const isStrictNotEqual = (a, b) => a !== b;
-export const isGreater = (a, b) => a > b;
+export const isEqual = (a, b) => a == b;//loose equality
+export const isStrictEqual = (a, b) => a === b;//strict equality
+export const isNotEqual = (a, b) => a != b;//loose inequality
+export const isStrictNotEqual = (a, b) => a !== b; //strict inequality
+export const isGreater = (a, b) => a > b;//greater than
 export const isLess = (a, b) => a < b;
 export const isGreaterOrEqual = (a, b) => a >= b;
 export const isLessOrEqual = (a, b) => a <= b;
@@ -45,9 +45,19 @@ export const isLessOrEqual = (a, b) => a <= b;
 
 // Logical operators
 
-export const and = (a, b) => a && b;
-export const or = (a, b) => a || b;
-export const not = (a) => !a;
+export const and = (a, b) => a && b;//Returns the first falsy value, or the last value if all are truthy.
+export const or = (a, b) => a || b;//Returns the first truthy value, or the last value if all are falsy.
+export const not = (a) => !a;//Logical negation
+export const nand = (a, b) => !(a && b);//Negation of AND
+export const nor = (a, b) => !(a || b); //Negation of OR
+export const xor = (a, b) => (a || b) && !(a && b);//Exclusive OR
+export const xnor = (a, b) => !( (a || b) && !(a && b) );//Exclusive NOR
+export const logicalNegation = (a) => !a;// same as not operator
+export const doubleNegation = (a) => !!a;// converts value to boolean
+export const shortCircuitAnd = (a, b) => a && b;// short-circuit AND
+export const shortCircuitOr = (a, b) => a || b; // short-circuit OR
+
+
 
 // Ternary shorthand
 export const ternary = (condition, valueIfTrue, valueIfFalse) =>
@@ -143,48 +153,27 @@ export const awaitExample = async (promise) => {
   return result;
 }
 
-/*
-Examples (commented) — paste into a separate example/test file or uncomment to run locally.
 
-console.log(add(7, 3));                // 10
-console.log(subtract(10, 4));          // 6
-console.log(multiply(6, 5));           // 30
-console.log(divide(20, 4));            // 5
-console.log(modulus(10, 3));           // 1
 
-console.log(assignValue('hello'));     // 'hello'
-console.log(evaluateAndAssign(2, 3));  // 5
-console.log(addAssign(10, 5));         // 15  (returns value, does not mutate input)
-x = 2; console.log(assign(9));         // sets exported x to 9, returns 9
+console.log("" && "hello");        // Output: ""//empty string is falsy
+//console.log(5 && 7);               // Output: 7// both truthy, returns last because of &&
+//console.log("hey there" || "false"); // Output: "hey there"// first truthy, returns first because of ||
+//console.log(0 && "false");         // Output: 0// first falsy, returns first because of &&  
+console.log("" || "hello");        // Output: "hello"// first falsy, returns second
+console.log(0 || 7);               // Output: 7// first falsy, returns second
+console.log("hey there" && "false" && true); // Output: true// all truthy, returns last or returns last  due to &&
+console.log(0 || null || "false"); // Output: "false"// all falsy until last, returns last
+//console.log(!"");                  // Output: true// empty string is falsy, negation is true
+//console.log(!42);                  // Output: false// non-zero number is truthy, negation is false
+//console.log(!!"hello");            // Output: true  // double negation converts to boolean true
+//console.log(!!0);                  // Output: false // double negation converts to boolean false 
 
-console.log(isEqual(10, '10'));        // true
-console.log(isStrictEqual(10, '10'));  // false
-console.log(isGreater(15, 10));        // true
 
-console.log(and(true, false));         // false
-console.log(or(true, false));          // true
-console.log(ternary(1 > 0, 'yes', 'no')); // 'yes'
+let age = 20;
 
-console.log(concatenate('a', 'b'));   // 'ab'
-console.log(typeOf([]));               // 'object'
-console.log(bitwiseAnd(6, 3));         // 2
-
-console.log(commaOperator(1, 2));      // 2
-
-const o = { a: 1 };
-console.log(deleteProperty({ ...o }, 'a')); // {}
-
-console.log(spreadArray([1,2,3]));     // [1,2,3]
-console.log(spreadObject({x:1}));      // { x: 1 }
-
-const gen = yieldExample();
-console.log(gen.next().value);         // 1
-
-// Promise example
-awaitExample(Promise.resolve('done')).then(console.log); // 'done'
-*/
-
-/*
-Falsy values: false, 0, -0, 0n, "", null, undefined, NaN
-Truthy examples: true, non-zero numbers, non-empty strings, objects, functions
-*/
+console,log(age >=18 && age <=35); //true
+console.log(age <18 || age >60); //false
+console.log(age <18 &&"you are a child"); //you are a child
+console.log(age >18 || "you are an adult"); //true
+console.log(age >=18 && age <=35 && "you are amoung the youth"); //youth
+console.log((age >=18 && age <=35) || "you are not amoung the youth"); //youth
