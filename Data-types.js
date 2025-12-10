@@ -50,4 +50,14 @@ let level = null; // null--->intentionally no value compaRred to undefined
 console.log("Level (null):", level); 
 
 // checking types using typeof operator
-console.log("Type of userage:", typeof userage);        
+console.log("Type of userage:", typeof userage);   
+
+console.log("Type of username:", typeof username);   
+
+console.log("Type of isStudent:", typeof isStudent);        
+console.log("Type of address:", typeof address);    
+console.log("Type of phoneNumber:", typeof phoneNumber);    
+console.log("Type of bigIntValue:", typeof bigIntValue);    
+console.log("Type of uniqueId:", typeof uniqueId);    
+console.log("Type of person:", typeof person);    
+console.log("Type of colorsPerfect:", typeof colorsPerfect);            
