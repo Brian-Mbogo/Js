@@ -43,6 +43,26 @@ for (let i = 0; i < matrixx.length; i++) {
     for (let j = 0; j < matrixx[i].length; j++) {
         console.log("Element at (" + i + "," + j + "):", matrixx[i][j]);
     }       
-}
+}  
+//break statement to exit a loop early
+for (let i = 0; i < 10; i++) {
+    if (i === 5) {  
+        break;
+    }
+    console.log("i is:", i);
+}           
+//continue statement to skip an iteration
+for (let i = 0; i < 10; i++) {
+    if (i % 2 === 0) {  
+        continue;
+    }
+    console.log("Odd i is:", i);
+}       
+//labeled statements to control nested loops
+outerLoop: for (let i = 0; i < 3; i++) {
+    innerLoop: for (let j = 0; j < 3; j++) {    
+        if (i === 1 && j === 1) {
+            break outerLoop;
+        }   
 
 
