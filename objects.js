@@ -31,9 +31,26 @@ personn.greet = function() {
 };
 console.log(personn.greet());
 
+
+
 // looping through object properties
+
 for (let key in personn) {
     console.log(`${key}: ${personn[key]}`);
 }   
+// checking if a property exists in an object
+console.log("name" in personn); // true
+console.log("isStudent" in personn); // false   
+// nested objects
+let student = {
+    name: "Alice",      
+    details: {
+        age: 22,
+        major: "Computer Science"   
+    }
+};
+console.log("Student Name:", student.name);
+console.log("Student Age:", student.details.age);
+console.log("Student Major:", student.details.major);
 
 
