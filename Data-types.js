@@ -37,6 +37,7 @@ console.log("A unique identifier is:", uniqueId);
     let person = { name: "Brian", age: 17 };
 console.log("Person object:", person);
 
+
 // array--->ordered collection of values
 let colorsPerfect = ["red", "green", "blue"];
 console.log("Colors array:", colorsPerfect);
@@ -44,5 +45,9 @@ console.log("Colors array:", colorsPerfect);
 // null vs undefined
 let score;  // undefined -->variable declared but not assigned as in null establishes difference
 console.log("Score (undefined):", score);
+
 let level = null; // null--->intentionally no value compaRred to undefined    
-console.log("Level (null):", level);        
+console.log("Level (null):", level); 
+
+// checking types using typeof operator
+console.log("Type of userage:", typeof userage);        
