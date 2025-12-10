@@ -92,6 +92,12 @@ export const deleteProperty = (obj, prop) => {
   return obj;
 };
 
+//function to demonstrate delete operator
+export const deleteExample = (obj, prop) => {
+  delete obj[prop];
+  return obj;
+};  
+
 // Spread / rest
 export const spreadArray = (arr) => [...arr];
 export const spreadObject = (obj) => ({ ...obj });
