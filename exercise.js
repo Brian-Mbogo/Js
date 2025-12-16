@@ -32,3 +32,13 @@ console.log("Is 7 even?", isEven(7));
 const isEvenArrow = (num) => num % 2 === 0;
 console.log("Is 10 even?", isEvenArrow(10));
 console.log("Is 15 even?", isEvenArrow(15));    
+
+//calculate the area of a rectangle
+function areaOfRectangle(length, width) {
+    return length * width;  
+}   
+console.log("Area of rectangle with length 5 and width 3 is:", areaOfRectangle(5, 3));
+
+    // or arrow function version
+const areaOfRectangleArrow = (length, width) => length * width;
+console.log("Area of rectangle with length 7 and width 4 is:", areaOfRectangleArrow(7, 4));
