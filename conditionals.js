@@ -20,6 +20,7 @@
     else {
         console.log("Grade: F");    
     }   
+    //
 
 //switch statement
     let day = 3;    
