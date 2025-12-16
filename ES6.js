@@ -46,5 +46,8 @@ console.log("Sum using arrow function:", add(5, 3));
 const greet = (name = "Guest") => `Hello, ${name}!`;
 console.log(greet());
 console.log(greet("Bob"));
+// Rest parameters
+const sumAll = (...numbers) => numbers.reduce((acc, num) => acc + num, 0);
+console.log("Sum of all numbers using rest parameters:", sumAll(1, 2, 3, 4, 5));
 
 
