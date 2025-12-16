@@ -167,7 +167,7 @@ console.log(0 || null || "false"); // Output: "false"// all falsy until last, re
 //console.log(!42);                  // Output: false// non-zero number is truthy, negation is false
 //console.log(!!"hello");            // Output: true  // double negation converts to boolean true
 //console.log(!!0);                  // Output: false // double negation converts to boolean false 
-
+//examples to demonstrate logical operators
 
 
 // && used when the first one is truethy it checks for second if both are truethy it returns last value otherwise it returns false
