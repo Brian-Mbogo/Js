@@ -8,3 +8,14 @@ console.log(greet("Alice"));
 
 const greetArrow = (name) => "Hello, " + name + "!";
 console.log(greetArrow("Bob"));
+
+
+//sum of two Numbers
+function sum(a, b) {
+    return a + b;  
+}       
+console.log("Sum of 5 and 3 is:", sum(5, 3));
+
+     //  or arrow function version
+const sumArrow = (a, b) => a + b;
+console.log("Sum of 10 and 7 is:", sumArrow(10, 7));    
