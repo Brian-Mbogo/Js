@@ -86,3 +86,20 @@ console.log("FizzBuzz of 30:", fizzBuzzArrow(30));
 console.log("FizzBuzz of 18:", fizzBuzzArrow(18));
 console.log("FizzBuzz of 20:", fizzBuzzArrow(20));
 console.log("FizzBuzz of 11:", fizzBuzzArrow(11));
+
+//7. Leap year checker
+function isLeapYear(year) {
+    return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);  
+}
+console.log("Is 2020 a leap year?", isLeapYear(2020));
+console.log("Is 1900 a leap year?", isLeapYear(1900));
+console.log("Is 2000 a leap year?", isLeapYear(2000));  
+console.log("Is 2021 a leap year?", isLeapYear(2021));
+
+    // or arrow function version
+const isLeapYearArrow = (year) => (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
+console.log("Is 2016 a leap year?", isLeapYearArrow(2016));     
+console.log("Is 1800 a leap year?", isLeapYearArrow(1800));
+console.log("Is 2400 a leap year?", isLeapYearArrow(2400));  
+console.log("Is 2022 a leap year?", isLeapYearArrow(2022)); 
+
