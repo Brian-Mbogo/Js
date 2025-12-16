@@ -10,7 +10,7 @@ const greetArrow = (name) => "Hello, " + name + "!";
 console.log(greetArrow("Bob"));
 
 
-//sum of two Numbers
+//2. sum of two Numbers
 function sum(a, b) {
     return a + b;  
 }       
@@ -21,7 +21,7 @@ const sumArrow = (a, b) => a + b;
 console.log("Sum of 10 and 7 is:", sumArrow(10, 7));    
 
 
-// Even and ODD checker
+//3. Even and ODD checker
 function isEven(num) {
     return num % 2 === 0;  
 }   
@@ -33,7 +33,7 @@ const isEvenArrow = (num) => num % 2 === 0;
 console.log("Is 10 even?", isEvenArrow(10));
 console.log("Is 15 even?", isEvenArrow(15));    
 
-//calculate the area of a rectangle
+//4.calculate the area of a rectangle
 function areaOfRectangle(length, width) {
     return length * width;  
 }   
@@ -43,7 +43,7 @@ console.log("Area of rectangle with length 5 and width 3 is:", areaOfRectangle(5
 const areaOfRectangleArrow = (length, width) => length * width;
 console.log("Area of rectangle with length 7 and width 4 is:", areaOfRectangleArrow(7, 4));
 
-//celcius to fahrenheit converter
+//5.celcius to fahrenheit converter
 function celsiusToFahrenheit(celsius) {
     return (celsius * 9/5) + 32;  
 }       
@@ -52,3 +52,37 @@ console.log("25°C in Fahrenheit is:", celsiusToFahrenheit(25));
     // or arrow function version
 const celsiusToFahrenheitArrow = (celsius) => (celsius * 9/5) + 32;
 console.log("30°C in Fahrenheit is:", celsiusToFahrenheitArrow(30));
+
+//6.fizz buzz function
+function fizzBuzz(num) {
+    if (num % 3 === 0 && num % 5 === 0) {   
+        return "FizzBuzz";  
+    } else if (num % 3 === 0) {    
+        return "Fizz";  
+    } else if (num % 5 === 0) {    
+        return "Buzz";  
+    } else {
+        return num;  
+    }   
+}
+console.log("FizzBuzz of 15:", fizzBuzz(15));
+console.log("FizzBuzz of 9:", fizzBuzz(9));
+console.log("FizzBuzz of 10:", fizzBuzz(10));
+console.log("FizzBuzz of 7:", fizzBuzz(7));
+
+    // or arrow function version
+const fizzBuzzArrow = (num) => {
+    if (num % 3 === 0 && num % 5 === 0) {
+        return "FizzBuzz";
+    } else if (num % 3 === 0) {
+        return "Fizz";
+    } else if (num % 5 === 0) {
+        return "Buzz";
+    } else {
+        return num;
+    }   
+};
+console.log("FizzBuzz of 30:", fizzBuzzArrow(30));
+console.log("FizzBuzz of 18:", fizzBuzzArrow(18));
+console.log("FizzBuzz of 20:", fizzBuzzArrow(20));
+console.log("FizzBuzz of 11:", fizzBuzzArrow(11));
