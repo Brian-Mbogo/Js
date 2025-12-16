@@ -40,14 +40,34 @@ console.log(power(3));
 console.log(sum(1, 2, 3, 4, 5));
 console.log(filter([1, 2, 3, 4, 5], num => num % 2 === 0));
 
-// Output:
-// Hello, Alice!
-// 8    
-// 8
-// 9
-// 15
-// [ 2, 4 ]
+
 
 // This code demonstrates various types of functions in JavaScript, including function declarations, function expressions, arrow functions, functions with default parameters, rest parameters, and higher-order functions. Each function performs a specific task and can be reused throughout the code.   
+//console.log("hey")
 
-    
+
+  //  function callMe() {
+    //console.log("i have been called");
+//}
+
+
+//console.log("Hey there!");
+
+//callMe();
+
+
+
+    console.log("hey");
+
+
+console.log("i have been called");
+
+function returnMe() {
+console.log("hey there");
+
+}
+returnMe();
+
+
+
+

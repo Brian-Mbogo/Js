@@ -169,11 +169,25 @@ console.log(0 || null || "false"); // Output: "false"// all falsy until last, re
 //console.log(!!0);                  // Output: false // double negation converts to boolean false 
 
 
+
+// && used when the first one is truethy it checks for second if both are truethy it returns last value otherwise it returns false
+//|| is used when the first one is falselsy it checks for second if any one is truethy it returns true otherwise it returns false
 let age = 20;
 
-console,log(age >=18 && age <=35); //true
-console.log(age <18 || age >60); //false
-console.log(age <18 &&"you are a child"); //you are a child
-console.log(age >18 || "you are an adult"); //true
-console.log(age >=18 && age <=35 && "you are amoung the youth"); //youth
-console.log((age >=18 && age <=35) || "you are not amoung the youth"); //youth
+console,log(age >=18 && age <=35); //true//because both are true and && is used to combine them if they are true
+
+
+console.log(age >=18 || age <=35); //true//because first is true//if any one is true with || it returns true 
+
+
+console.log(age <18 || age >60); //false//both are false with || it returns false
+
+
+console.log(age <18 &&"you are a child"); //you are a child//false because first is false with && it returns false
+
+
+console.log(age >18 || "you are an adult"); //true//because first is true with || it returns true
+
+console.log(age >=18 && age <=35 && "you are amoung the youth"); //youth//true because both are true with && it returns last value
+
+console.log((age >=18 && age <=35) || "you are not amoung the youth"); //youth  //true because first is true with || it returns first value
