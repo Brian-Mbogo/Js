@@ -42,3 +42,13 @@ console.log("Area of rectangle with length 5 and width 3 is:", areaOfRectangle(5
     // or arrow function version
 const areaOfRectangleArrow = (length, width) => length * width;
 console.log("Area of rectangle with length 7 and width 4 is:", areaOfRectangleArrow(7, 4));
+
+//celcius to fahrenheit converter
+function celsiusToFahrenheit(celsius) {
+    return (celsius * 9/5) + 32;  
+}       
+console.log("25°C in Fahrenheit is:", celsiusToFahrenheit(25));
+
+    // or arrow function version
+const celsiusToFahrenheitArrow = (celsius) => (celsius * 9/5) + 32;
+console.log("30°C in Fahrenheit is:", celsiusToFahrenheitArrow(30));
