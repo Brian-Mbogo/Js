@@ -101,5 +101,18 @@ const isLeapYearArrow = (year) => (year % 4 === 0 && year % 100 !== 0) || (year 
 console.log("Is 2016 a leap year?", isLeapYearArrow(2016));     
 console.log("Is 1800 a leap year?", isLeapYearArrow(1800));
 console.log("Is 2400 a leap year?", isLeapYearArrow(2400));  
-console.log("Is 2022 a leap year?", isLeapYearArrow(2022)); 
+console.log("Is 2022 a leap year?", isLeapYearArrow(2022));
 
+
+function checkNumber(num) {
+  if (num % 12 === 0) return "Super Even";
+  if (num % 6 === 0) return "Half Even";
+  if (num % 2 === 0) return "Even";
+  return "Odd";
+}
+
+// Examples
+console.log(checkNumber(24)); 
+console.log(checkNumber(18)); 
+console.log(checkNumber(8));  
+console.log(checkNumber(7));  

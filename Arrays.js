@@ -9,8 +9,8 @@ console.log("Mixed array:", mixedArray);
 
 
 //accessing array elements using index
-console.log("First color:", colors[0]); //Outputs: red
-console.log("Second number:", numbers[1]); //Outputs: 2
+console.log("First color:", colors[0]); 
+console.log("Second number:", numbers[1]); 
 
 
 //modifying array elements
