@@ -11,6 +11,9 @@ console.log(greetArrow("Bob"));
 
 
 //2. sum of two Numbers
+//explanation: This function takes two numbers as input and returns their sum.
+//returns the sum of a and b
+
 function sum(a, b) {
     return a + b;  
 }       
@@ -22,6 +25,12 @@ console.log("Sum of 10 and 7 is:", sumArrow(10, 7));
 
 
 //3. Even and ODD checker
+//explanation: This function checks if a number is even or odd and returns true for even numbers and false for odd numbers.
+//returns true if num is even, false if odd
+//modulus operator % gives the remainder of division
+//if num divided by 2 has no remainder, it is even
+//if there is a remainder, it is odd
+//Example: 4 % 2 = 0 (even), 7 % 2 = 1 (odd)
 function isEven(num) {
     return num % 2 === 0;  
 }   
@@ -34,6 +43,7 @@ console.log("Is 10 even?", isEvenArrow(10));
 console.log("Is 15 even?", isEvenArrow(15));    
 
 //4.calculate the area of a rectangle
+//explanation: This function calculates the area of a rectangle given its length and width. 
 function areaOfRectangle(length, width) {
     return length * width;  
 }   
@@ -44,6 +54,7 @@ const areaOfRectangleArrow = (length, width) => length * width;
 console.log("Area of rectangle with length 7 and width 4 is:", areaOfRectangleArrow(7, 4));
 
 //5.celcius to fahrenheit converter
+//explanation: This function converts a temperature from Celsius to Fahrenheit using the formula F = (C * 9/5) + 32.    
 function celsiusToFahrenheit(celsius) {
     return (celsius * 9/5) + 32;  
 }       
@@ -54,6 +65,7 @@ const celsiusToFahrenheitArrow = (celsius) => (celsius * 9/5) + 32;
 console.log("30°C in Fahrenheit is:", celsiusToFahrenheitArrow(30));
 
 //6.fizz buzz function
+//explanation: This function returns "Fizz" for multiples of 3, "Buzz" for multiples of 5, "FizzBuzz" for multiples of both 3 and 5, and the number itself for other cases.
 function fizzBuzz(num) {
     if (num % 3 === 0 && num % 5 === 0) {   
         return "FizzBuzz";  
@@ -88,6 +100,9 @@ console.log("FizzBuzz of 20:", fizzBuzzArrow(20));
 console.log("FizzBuzz of 11:", fizzBuzzArrow(11));
 
 //7. Leap year checker
+//explanation: This function checks if a given year is a leap year. A year is a leap year if it is divisible by 4, but not divisible by 100, unless it is also divisible by 400.
+//if so, the function returns true; otherwise, it returns false.
+//
 function isLeapYear(year) {
     return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);  
 }
@@ -116,3 +131,8 @@ console.log(checkNumber(24));
 console.log(checkNumber(18)); 
 console.log(checkNumber(8));  
 console.log(checkNumber(7));  
+
+
+
+console.log(y);
+var y = 10;
