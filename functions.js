@@ -6,10 +6,22 @@ function greet(name) {
 greet("Brian")
 console.log (greet("Brian")) 
 
+
+function color(rainbow) {
+    return "My favorite color is,  "+ rainbow +  "&";
+}
+// color("red")
+console.log(color("red"))
+
+
 //function expression
 const add = function(a, b) {
     return a + b;
 };  
+const calculate =add;
+console.log(calculate(12,5));
+
+
 //arrow function
 const multiply = (a, b) => a * b;
 
@@ -71,7 +83,5 @@ console.log("hey there");
 returnMe();
 
 //end of functions.js
-
-
 
 
