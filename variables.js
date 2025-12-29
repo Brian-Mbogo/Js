@@ -27,6 +27,7 @@ console.log(yote);
 
 
 
+
 // Performing a calculation with the age variable
 
 age=21+10;

@@ -2,7 +2,9 @@
 //function declaration
 function greet(name) {
     return "Hello, " + name + "!";
-}       
+}  
+greet("Brian")
+console.log (greet("Brian")) 
 
 //function expression
 const add = function(a, b) {
