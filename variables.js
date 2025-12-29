@@ -6,7 +6,26 @@ console.log( "My current age is:",{age});
 
 // Updating and displaying the variables
 name="Brian";
-console.log("My name is:",{name});  
+console.log("my name is ,'+ name +")
+
+
+//learning concatenation
+//using + operator
+let firstName="water";
+let secondName="melon";
+
+let fullName=firstName+" "+ secondName;
+console.log(fullName);
+
+//concatenating strings and numbers
+// template literals
+let Miaka=20;
+let jina="Mbogo";
+
+let yote=`My name is ${jina} and am  ${Miaka}  years old.`;
+console.log(yote);
+
+
 
 // Performing a calculation with the age variable
 
