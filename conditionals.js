@@ -33,7 +33,7 @@ if (number > 0) {
    
     
 
-let Miaka = 2;
+let Miaka = 25;
 
 if (Miaka >= 3 && Miaka <= 9) {
   console.log("Lower Primary");
