@@ -40,3 +40,11 @@ var city="New York";
 console.log("I live in:",{city});
 city="Los Angeles";
 console.log("I moved to:",{city});         
+
+
+
+var visitorName = prompt("What's your name : ")
+alert("Welcome " + visitorName + " to our website!");
+var isCoolWithIt = confirm("Are you ok with it?")
+
+
