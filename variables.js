@@ -4,9 +4,14 @@ let name   =  "John Doe";
 // Displaying the variables
 console.log( "My current age is:",{age});
 
+console.log("My name is:",{name});
+
+// Updating the variables
+age = 25;
+console.log("My updated age is:",{age});
 // Updating and displaying the variables
-name="Brian";
-console.log("my name is ,'+ name +")
+name="Brian Smith";
+console.log("my name is ,"+ name +"");
 
 
 //learning concatenation
