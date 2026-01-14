@@ -46,9 +46,44 @@ if (Miaka >= 3 && Miaka <= 9) {
 } else {
   console.log("Not in 8-4-4 system");
 }
+//another way of writing the same code
+
+if (Miaka >= 3 && Miaka <= 23) {
+  if (Miaka <= 9) {
+    console.log("Lower Primary");
+  } else if (Miaka <= 13) {
+    console.log("Upper Primary");
+  } else if (Miaka <= 18) {
+    console.log("Secondary");
+  } else if (Miaka <= 23) {
+    console.log("University");
+  } 
+} else {
+  console.log("Not in 8-4-4 system");
+}   
 
 
 //switch statement--executes a block of code based on different cases
+let age2 = 22;
+switch (true) {
+    case (age2 >=3 && age2 <=9)   :
+        console.log("lower primary");
+        break;
+        case (age2 >=10 && age2 <=13)   :
+        console.log("upper primary");
+        break;
+        case (age2 >=14 && age2 <=18)   :
+        console.log("secondary");
+        break;
+        case (age2 >=19 && age2 <=23)   :
+        console.log("university");
+        break;
+    default:
+        console.log("not in 8-4-4 system"); 
+    
+
+}
+
     let day = 3;    
     switch (day) {
         case 1:
@@ -75,7 +110,33 @@ if (Miaka >= 3 && Miaka <= 9) {
             break;
         default:
             console.log("Invalid day");    
-    }       
+    } 
+    
+    let Amount=50;
+    switch(true){
+    case Amount<1000:
+        console.log("No discount");
+        break;
+     case Amount >=1000 && Amount <=4999:
+            console.log("5% discount"   );
+break;
+case Amount >=5000 && Amount <=9999:
+    console.log("10% discount");
+    break;
+    case Amount >=10000:
+    console.log("20% discount");
+    break;
+    default:
+    console.log("Invalid amount ");
+
+    }
+
+    
+
+
+
+
+
 
 //ternary operator--shorthand for if...else statement
     let legalAge = 20;    

@@ -19,12 +19,21 @@ console.log("Modified colors array:", colors); //Outputs: ["red", "yellow", "blu
 
 
 //array methods
-numbers.push(6); //adds 6 to the end of the array       
+numbers.push(6); //adds 6 to the end of the array and returns the new length of the array
+//and its mutates the original array by adding the element      
 console.log("After push:", numbers); //Outputs: [1, 2, 3, 4, 5, 6]
-numbers.pop();          
+numbers.pop(); // removes the last element from the array and returns that element by 
+//mutating the original array by removing the last element
 console.log("After pop:", numbers); //Outputs: [1, 2, 3, 4, 5]
 let length = colors.length;       
 console.log("Colors array length:", length);   
+
+let treasures = ["gold", "silver", "diamonds"];
+treasures.pop
+(); // removes "diamonds"
+console.log("Treasures after pop:", treasures); //Outputs: ["gold", "silver"]
+treasures.push("ruby"); // adds "ruby"
+console.log("Updated treasures array:", treasures); //Outputs: ["gold", "silver", "ruby"]   
 
 
 //iterating over an array using for loop
