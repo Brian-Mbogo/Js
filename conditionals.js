@@ -131,17 +131,18 @@ case Amount >=5000 && Amount <=9999:
 
     }
 
-    
-
-
-
-
 
 
 //ternary operator--shorthand for if...else statement
     let legalAge = 20;    
     let canVote = (legalAge >= 18) ? "Yes, you can vote." : "No, you cannot vote.";    
-    console.log(canVote);       
+    console.log(canVote);  
+    
+    let gender = "male";    
+     gift = (gender == "male") ?
+      "socks" : (gender == "female") ?
+       "street jewellery" : "no idea";
+    console.log(gift);
 
 //nested conditionals--
     let legalPeriod = 25;   

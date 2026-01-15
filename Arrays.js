@@ -15,25 +15,63 @@ console.log("Second number:", numbers[1]);
 
 //modifying array elements
 colors[1] = "yellow";       
-console.log("Modified colors array:", colors); //Outputs: ["red", "yellow", "blue"]
+console.log("Modified colors array:", colors); 
 
 
 //array methods
-numbers.push(6); //adds 6 to the end of the array and returns the new length of the array
-//and its mutates the original array by adding the element      
-console.log("After push:", numbers); //Outputs: [1, 2, 3, 4, 5, 6]
-numbers.pop(); // removes the last element from the array and returns that element by 
+
+//PUSH METHOD
+ //adds 6 to the end of the array and returns the new length of the array
+//and its mutates the original array by adding the element  
+numbers.push(6);
+console.log("After push:", numbers); 
+
+
+//POP METHOD
+// removes the last element from the array and returns that element by 
 //mutating the original array by removing the last element
-console.log("After pop:", numbers); //Outputs: [1, 2, 3, 4, 5]
+numbers.pop(); 
+console.log("After pop:", numbers);
 let length = colors.length;       
 console.log("Colors array length:", length);   
 
-let treasures = ["gold", "silver", "diamonds"];
-treasures.pop
-(); // removes "diamonds"
-console.log("Treasures after pop:", treasures); //Outputs: ["gold", "silver"]
-treasures.push("ruby"); // adds "ruby"
-console.log("Updated treasures array:", treasures); //Outputs: ["gold", "silver", "ruby"]   
+
+
+//SHIFT METHOD
+//removes the first element from the array and returns that element
+//mutates the original array by removing the first element
+let fiirstColor = colors.shift(); 
+console.log("First color removed using shift:", fiirstColor); //Outputs: red
+console.log("Colors array after shift:", colors);   
+
+
+
+//UNSHIFT METHOD    
+//adds an element to the beginning of the array and returns the new length
+//mutates the original array by adding the element at the start
+let newLength = colors.unshift("purple"); 
+console.log("New length after unshift:", newLength); 
+console.log("Colors array after unshift:", colors); 
+
+
+
+//ARRAY SPLICE METHOD
+//used to add/remove elements from any position in the array
+//removing 1 element at index 1 and adding "pink" and "orange" there
+colors.splice(1, 1, "pink", "orange"); 
+console.log("Colors array after splice:", colors);      
+
+
+//ARRAY SLICE METHOD
+//creates a new array by extracting a portion of the original array
+let subArray = colors.slice(1, 3); 
+console.log("Sliced colors array (1 to 3):", subArray); 
+
+//ARRAY CONCAT METHOD
+//combines two or more arrays into a new array
+let moreColorSs = ["cyan", "magenta"];
+let combinedColorsS = colors.concat(moreColorsS); 
+console.log("Combined colors array:", combinedColorsS);              
 
 
 //iterating over an array using for loop
