@@ -179,7 +179,7 @@
 // console.log("Flattened array:", flattenedArray); //Outputs: [1, 2, 3, 4, 5] 
 // //array fill method
 // let filledArray = new Array(5).fill(0); 
-// console.log("Filled array with 0s:", filledArray); //Outputs: [0, 0, 0, 0, 0]
+// console.log("Filled array with 0s:", filledArray);
 
 
 
@@ -200,7 +200,10 @@ console.log("Most expensive price:", mostexpensive);
 console.log("Least expensive price:", leastexpexnsive);
 //explanation of the code above:
 //1. We initialize an array called prices with a list of numbers representing prices.
-//2. We set two variables, mostexpensive and leastexpexnsive, to the first and last elements of the prices array respectively.  
+//2. We set two variables, mostexpensive and leastexpexnsive, to the first and last elements of the prices array respectively. 
+//we add 0 index for mostexpensive and last index for leastexpexnsive because we want to compare all prices in the array starting from 
+
+// t he first element. this way, we have a baseline to compare against as we iterate through the array.
 //3. We use a for loop to iterate through each price in the prices array.
 //4. Inside the loop, we check if the current price is greater than mostexpensive. If it is, we update mostexpensive to be the current price.
 //5. We also check if the current price is less than leastexpexnsive. If it is, we update leastexpexnsive to be the current price.
