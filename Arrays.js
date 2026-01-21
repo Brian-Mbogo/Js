@@ -184,7 +184,7 @@
 
 
 //finding the most expensive price and least expensive price in an array of prices
-//task assigned
+//task assigned to me
 let prices=[10, 50,90,100];
 let mostexpensive=prices[0];
 let leastexpexnsive=prices[0];  
