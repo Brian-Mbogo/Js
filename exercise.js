@@ -136,3 +136,85 @@ console.log(checkNumber(7));
 
 console.log(y);
 var y = 10;
+
+
+
+//How to implement arrays and loops in JavaScript
+
+//array of fruits
+//this is for demonstrating loops
+let fruits = ["apple", "banana", "cherry", "date", "elderberry"];
+//process of what happens in the for loop below
+//1. initialization: let i = 0; (the loop initializes the variable i to 0, the starting index of the array)
+//2. condition check: i < fruits.length; (the loop checks if i is less than the length of the fruits array)
+//3. code execution: console.log("Fruit:", fruits[i]); (prints the current fruit at index i)
+//4. increment: i++ (the loop increments i by 1 to move to the next index)
+//5. repeat steps 2-4 until the condition is no longer true 
+for (let i = 0; i < fruits.length; i++) {
+    console.log("Fruit:", fruits[i]);    
+}   
+//while loop to demonstrate looping based on a condition
+let count = 0;
+while (count < 3) {
+    console.log("Count is:", count);    
+    count++;   
+}
+//process of what happens in the while loop above
+//1. condition: count < 3; (the loop will continue as long as count is less than 3)
+//2. code execution: console.log("Count is:", count); (prints the current value of count)
+//3. increment: count++; (increments the value of count by 1 after each iteration)
+//4. repeat steps 1-3 until the condition is no longer true
+//do...while loop to ensure the loop runs at least once
+
+
+let number = 0;
+do {
+    console.log("Number is:", number);    
+    number++;   
+} while (number < 2);
+//process of what happens in the do...while loop above
+//1. code execution: console.log("Number is:", number); (prints the current value of number)
+//2. increment: number++; (increments the value of number by 1 after each iteration)
+//3. condition: number < 2; (the loop will continue as long as number is less than 2)
+//4. repeat steps 1-3 until the condition is no longer true
+
+//for...of loop to iterate over array elements
+for (let fruit of fruits) {
+    console.log("Fruit:", fruit);
+}   
+//process of what happens in the for...of loop above
+//1. initialization: let fruit of fruits; (the loop initializes the variable fruit to each element in the fruits array)
+//2. code execution: console.log("Fruit:", fruit); (prints the current value of fruit)
+//3. repeat steps 1-2 for each element in the fruits array until all elements have been processed
+
+//for...in loop to iterate over object properties
+let car = { make: "Honda", model: "Civic", year: 2019 };
+for (let key in car) {
+    console.log(key + ":", car[key]);
+}
+//process of what happens in the for...in loop above
+//1. initialization: let key in car; (the loop initializes the variable key to each property name in the car object)
+//2. code execution: console.log(key + ":", car[key]); (prints the current property name and its value)
+//3. repeat steps 1-2 for each property in the car object until all properties have been processed  
+
+
+//combination of ARRAYS and OBJECTS
+//elements of the array should be objects
+let students = [
+    { name: "John", age: 20 },
+    { name: "Jane", age: 22 },
+    { name: "Jim", age: 21 }
+];  
+for (let student of students) {
+    console.log("Student Name:", student.name + ", Age:", student.age);
+}   
+//process of what happens in the for...of loop above
+//1. initialization: let student of students; (the loop initializes the variable student to each object in the students array)
+//2. code execution: console.log("Student Name:", student.name + ", Age:", student.age); (prints the name and age of the current student)
+//3. repeat steps 1-2 for each object in the students array until all objects have been processed
+
+let fruit = ["Apple", "Banana", "Mango"];
+
+for (let i = 0; i < fruit.length; i++) {
+    console.log(fruit[i]);
+}
