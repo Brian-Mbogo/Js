@@ -202,8 +202,14 @@ console.log("Least expensive price:", leastexpexnsive);
 //1. We initialize an array called prices with a list of numbers representing prices.
 //2. We set two variables, mostexpensive and leastexpexnsive, to the first and last elements of the prices array respectively. 
 //we add 0 index for mostexpensive and last index for leastexpexnsive because we want to compare all prices in the array starting from 
-
-// t he first element. this way, we have a baseline to compare against as we iterate through the array.
+//line 189 does not work as intended because leastexpexnsive should also be initialized to 0
+//[0] instead of prices[prices.length - 1] to ensure that we are comparing all prices in the array.also called baseline initialization
+//
+//hence we set both mostexpensive and leastexpexnsive to prices[0],because we want
+//  to start our comparison from there. This ensures that mostexpensive starts with the highest 
+// price found so far,and leastexpexnsive starts with the lowest price found so far, both initialized to
+//in simple terms its like setting a benchmark using the first element of the array as a reference point for comparison.
+// the first element. this way, we have a baseline to compare against as we iterate through the array.
 //3. We use a for loop to iterate through each price in the prices array.
 //4. Inside the loop, we check if the current price is greater than mostexpensive. If it is, we update mostexpensive to be the current price.
 //5. We also check if the current price is less than leastexpexnsive. If it is, we update leastexpexnsive to be the current price.
