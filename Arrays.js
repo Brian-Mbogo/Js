@@ -297,3 +297,59 @@ const prices4=[15,25,35,45,55,65,75,85];
 //strings are also objects in JavaScript that represent a sequence of characters.
 //arrays can hold different data types including numbers, strings, booleans, objects, and even other arrays.
 //strings are used to represent text data and can be manipulated using various string methods.
+
+//OBJECT ORIENTED PROGRAMMING IN JAVASCRIPT
+class Car {
+    constructor(brand, model, year) {
+        this.brand = brand;
+        this.model = model;
+        this.year = year;
+    }   
+    displayInfo() {
+        console.log(`Car: ${this.brand} ${this.model}, Year: ${this.year}`);
+    }   
+}
+
+let myCar = new Car("Toyota", "Camry", 2020);
+myCar.displayInfo();
+
+const prices5=[100,200,300,400,500];
+//i want to sort this array in descending order
+
+
+for (let i = 0; i < prices5.length; i++) {
+    for (let j = i + 1; j < prices5.length; j++) {
+        if (prices5[i] < prices5[j]) {
+            let temp = prices5[i];
+            prices5[i] = prices5[j];
+            prices5[j] = temp;
+        }
+    }
+}
+
+console.log(prices5); 
+//explanation of the code above:
+//1. We have an array called prices5 containing a list of numbers.
+//2. We use a nested for loop to iterate through the array. 
+//The outer loop (i) goes from the first element to the last, and the inner loop (j) goes
+//  from the element after i to the last element.
+//3. Inside the inner loop, we compare the elements at index i and j. If the element at index i is less than the element at index j, we swap them.
+//4. We use a temporary variable (temp) to hold the value of prices5[i] while we perform the swap.
+//5. After both loops complete, the array prices5 is sorted in descending order.
+//6. Finally, we print the sorted array to the console.
+
+//given an array of prices x and a range from y to z find the prices that  fall within the ange
+//eg x=[20,400,7.50,77,1000]
+// y=40
+// z=100
+//output;[50,77]
+let x=[20,400,7.50,77,1000];
+let y=40;
+let z=100;
+let result=[];
+for (let price of x) {
+    if (price >= y && price <= z) {
+        result.push(price);
+    }
+}
+console.log("Prices within range:", result);    
