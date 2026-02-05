@@ -400,8 +400,16 @@ const maxPointer=pointers[0];
 //hence we use pointers.length-1 to get the last element   
 const minPointer=pointers[pointers.length-1];
 console.log("Maximum pointer value:",maxPointer);
-console.log("Minimum pointer value:",minPointer);
+console.log("Minimum pointer value:",minPointer)
 
+const pointerASC=[4,13,57,90,23,67,89,12];
+//then you sort the array in ascending order
+pointerASC.sort(function(a,b){return(a-b)});
+console.log("pointers in ascending order:",pointerASC);
 
-
-
+//then you find the maximum and minimum pointer values  
+//the maximum pointer value will be the last element of the sorted array and the minimum pointer value will be the first element of the sorted array
+const maxPointerASC=pointerASC[pointerASC.length-1];
+const minPointerASC=pointerASC[0];
+console.log("Maximum pointer value in ascending order:",maxPointerASC);
+console.log("Minimum pointer value in ascending order:",minPointerASC); 
