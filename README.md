@@ -35,8 +35,6 @@ JavaScript
 
 HTML (for testing scripts)
 
-
-
 How to use
 
 Clone the repo
